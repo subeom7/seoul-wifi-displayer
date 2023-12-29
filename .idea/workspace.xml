@@ -9,8 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87b63020-f73a-4f4c-8aeb-bf460e3ff2bf" name="Changes" comment="JDK버전 21 -&gt; 1.8로 수정">
+    <list default="true" id="87b63020-f73a-4f4c-8aeb-bf460e3ff2bf" name="Changes" comment="workspace.xml 업데이트">
       <change afterPath="$PROJECT_DIR$/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,24 +45,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/subeo/IdeaProjects/Mission1-Project/src/main/webapp/index.jsp",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/subeo/IdeaProjects/Mission1-Project/src/main/webapp/index.jsp&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\subeo\IdeaProjects\Mission1-Project" />
@@ -165,7 +167,7 @@
       <option name="presentableId" value="Default" />
       <updated>1703836780259</updated>
       <workItem from="1703836781248" duration="3126000" />
-      <workItem from="1703861973027" duration="2088000" />
+      <workItem from="1703861973027" duration="2243000" />
     </task>
     <task id="LOCAL-00001" summary="공공와이파이 데이터 조회 및 파싱 기능 추가">
       <option name="closed" value="true" />
@@ -191,7 +193,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703863975118</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="workspace.xml 업데이트">
+      <option name="closed" value="true" />
+      <created>1703864143835</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1703864143835</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,6 +211,7 @@
     <MESSAGE value="공공와이파이 데이터 조회 및 파싱 기능 추가" />
     <MESSAGE value="config.properties 추가" />
     <MESSAGE value="JDK버전 21 -&gt; 1.8로 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="JDK버전 21 -&gt; 1.8로 수정" />
+    <MESSAGE value="workspace.xml 업데이트" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml 업데이트" />
   </component>
 </project>
