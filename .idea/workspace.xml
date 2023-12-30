@@ -9,10 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87b63020-f73a-4f4c-8aeb-bf460e3ff2bf" name="Changes" comment="workspace.xml 업데이트">
-      <change afterPath="$PROJECT_DIR$/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="87b63020-f73a-4f4c-8aeb-bf460e3ff2bf" name="Changes" comment="workspace.xml에 config, .gitignore 및 workspace 설정 변경 사항 업데이트">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/subeom/service/PublicWifiService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/subeom/service/PublicWifiService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,12 +28,29 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;subeom7&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="ea439455-2b6a-4c8e-ac5f-eb144691bfb0" />
+        <option name="url" value="https://github.com/subeom7/seoul-wifi-displayer.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
     <option name="FILTER_INFO" value="true" />
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -45,24 +61,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/subeo/IdeaProjects/Mission1-Project/src/main/webapp/index.jsp&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/subeo/IdeaProjects/Mission1-Project/src/main/webapp/index.jsp",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\subeo\IdeaProjects\Mission1-Project" />
@@ -167,7 +183,8 @@
       <option name="presentableId" value="Default" />
       <updated>1703836780259</updated>
       <workItem from="1703836781248" duration="3126000" />
-      <workItem from="1703861973027" duration="2243000" />
+      <workItem from="1703861973027" duration="2656000" />
+      <workItem from="1703947428456" duration="1174000" />
     </task>
     <task id="LOCAL-00001" summary="공공와이파이 데이터 조회 및 파싱 기능 추가">
       <option name="closed" value="true" />
@@ -201,7 +218,23 @@
       <option name="project" value="LOCAL" />
       <updated>1703864143835</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="congif.properties추가">
+      <option name="closed" value="true" />
+      <created>1703864428510</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1703864428510</updated>
+    </task>
+    <task id="LOCAL-00006" summary="workspace.xml에 config, .gitignore 및 workspace 설정 변경 사항 업데이트">
+      <option name="closed" value="true" />
+      <created>1703864531711</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1703864531711</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,6 +245,8 @@
     <MESSAGE value="config.properties 추가" />
     <MESSAGE value="JDK버전 21 -&gt; 1.8로 수정" />
     <MESSAGE value="workspace.xml 업데이트" />
-    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml 업데이트" />
+    <MESSAGE value="congif.properties추가" />
+    <MESSAGE value="workspace.xml에 config, .gitignore 및 workspace 설정 변경 사항 업데이트" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml에 config, .gitignore 및 workspace 설정 변경 사항 업데이트" />
   </component>
 </project>
