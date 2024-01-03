@@ -5,7 +5,7 @@ target/
 
 
 # API Key
-config.properties
+src/main/java/com/subeom/service/config.properties
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
