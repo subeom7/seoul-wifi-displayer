@@ -6,6 +6,7 @@ target/
 
 # API Key
 src/main/java/com/subeom/service/config.properties
+.env
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
