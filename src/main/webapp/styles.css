@@ -1,0 +1,46 @@
+/* styles.css 파일의 내용 */
+.search-form {
+    /* Styles for the form */
+    padding-top: 20px;
+}
+.search-field {
+    /* Styles for the input fields */
+}
+.search-button, .nearby-wipi-button {
+
+    margin-right: 5px;
+}
+.menu {
+
+}
+.menu a {
+
+}
+h1 {
+
+}
+
+form {
+    padding-bottom: 10px;
+}
+
+table {
+    border: 1px solid lightgray;
+    width: 100%;
+}
+td {
+    text-align: center; /* 가운데 정렬 */
+    vertical-align: middle; /* 세로 가운데 정렬 */
+    height: 70px;
+}
+th {
+    height: 40px;
+}
+
+thead, tfoot {
+    background-color: #04ac6c;
+    color: #fff;
+    border: 2px solid black;
+
+}
+
