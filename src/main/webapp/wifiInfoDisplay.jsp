@@ -31,35 +31,64 @@
 </form>
 
 <div class="wifi-table">
-    <table>
-        <thead>
-        <tr>
-            <th>거리(Km)</th>
-            <th>관리번호</th>
-            <th>자치구</th>
-            <th>와이파이명</th>
-            <th>도로명주소</th>
-            <th>상세주소</th>
-            <th>설치위치(층)</th>
-            <th>설치유형</th>
-            <th>설치기관</th>
-            <th>서비스 구분</th>
-            <th>망종류</th>
-            <th>설치년도</th>
-            <th>실내외구분</th>
-            <th>WIFI접속환경</th>
-            <th>X좌표</th>
-            <th>Y좌표</th>
-            <th>작업일자</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td colspan="17"><strong>위치 정보를 입력한 후에 조회해 주세요.</strong></td>
-        </tr>
-        <!-- Data rows will go here -->
-        </tbody>
-    </table>
+<table>
+    <thead>
+    <tr>
+        <th>거리(Km)</th>
+        <th>관리번호</th>
+        <th>자치구</th>
+        <th>와이파이명</th>
+        <th>도로명주소</th>
+        <th>상세주소</th>
+        <th>설치위치(층)</th>
+        <th>설치유형</th>
+        <th>설치기관</th>
+        <th>서비스 구분</th>
+        <th>망종류</th>
+        <th>설치년도</th>
+        <th>실내외구분</th>
+        <th>WIFI접속환경</th>
+        <th>X좌표</th>
+        <th>Y좌표</th>
+        <th>작업일자</th>
+    </tr>
+    </thead>
+    <tbody>
+    <%
+        List<WifiSpot> wifiSpots = (List<WifiSpot>) request.getAttribute("wifiSpots");
+        if(wifiSpots != null && !wifiSpots.isEmpty()) {
+            for(WifiSpot spot : wifiSpots) {
+    %>
+    <tr>
+        <td><%= spot.getDistance() %></td>
+        <td><%= spot.getManagerNo() %></td>
+        <td><%= spot.getWard() %></td>
+        <td><%= spot.getWifiName() %></td>
+        <td><%= spot.getAddress1() %></td>
+        <td><%= spot.getAddress2() %></td>
+        <td><%= spot.getInstallationFloor() %></td>
+        <td><%= spot.getInstallationType() %></td>
+        <td><%= spot.getServiceProvider() %></td>
+        <td><%= spot.getNetType() %></td>
+        <td><%= spot.getInstallYear() %></td>
+        <td><%= spot.getIndoorOutdoor() %></td>
+        <td><%= spot.getWifiEnvironment() %></td>
+        <td><%= spot.getLatitude() %></td>
+        <td><%= spot.getLongitude() %></td>
+        <td><%= spot.getWorkDate() %></td>
+    </tr>
+    <%
+        }
+    } else {
+    %>
+    <tr>
+        <td colspan="17">와이파이 정보를 불러오는 데 실패하였습니다.</td>
+    </tr>
+    <%
+        }
+    %>
+    </tbody>
+</table>
 </div>
 
 
