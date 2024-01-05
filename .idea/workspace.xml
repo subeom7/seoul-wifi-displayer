@@ -9,17 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87b63020-f73a-4f4c-8aeb-bf460e3ff2bf" name="Changes" comment="apiKey 로딩 메소드 구현">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/subeom/service/NearbyWipiServlet.java" afterDir="false" />
+    <list default="true" id="87b63020-f73a-4f4c-8aeb-bf460e3ff2bf" name="Changes" comment=".env 와 config.properties 삭제">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/subeom/service/SearchServlet.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/subeom/service/WifiSpot.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/webapp/service.jsp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/webapp/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/subeom/service/PublicWifiService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/subeom/service/PublicWifiService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +72,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/subeo/IdeaProjects/Mission1-Project/src/main/webapp/index.jsp&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/subeo/IdeaProjects/Mission1-Project&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -92,10 +88,28 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\subeo\IdeaProjects\Mission1-Project" />
+      <recent name="C:\Users\subeo\IdeaProjects\Mission1-Project\src\main\webapp" />
+      <recent name="C:\Users\subeo\IdeaProjects\Mission1-Project\src\main\webapp\WEB-INF" />
+      <recent name="C:\Users\subeo\IdeaProjects\Mission1-Project\src\main\webapp\WEB-INF\lib" />
       <recent name="C:\Users\subeo\IdeaProjects\Mission1-Project\src\main\java\com\subeom\service" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.84">
+    <configuration name="Mission1-Project in Mission1-Project" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="Mission1-Project" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="directory" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <envs>
+        <env name="PUBLIC_WIFI_API_KEY" value="&quot;526b6b495473756239316749437a4a&quot;" />
+      </envs>
+      <dir value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Mission1-Project" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.84" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -263,6 +277,11 @@
           <option name="VM_PARAMETERS" value="" />
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
+        <EnvironmentVariables>
+          <option name="NAME" value="PUBLIC_WIFI_API_KEY" />
+          <option name="VALUE" value="526b6b495473756239316749437a4a" />
+          <option name="IS_PREDEFINED" value="false" />
+        </EnvironmentVariables>
       </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
@@ -272,6 +291,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.Mission1-Project in Mission1-Project" />
       <item itemvalue="Tomcat Server.Mission1-Project" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.84" />
     </list>
@@ -289,7 +309,8 @@
       <workItem from="1703947428456" duration="1531000" />
       <workItem from="1704180907951" duration="10072000" />
       <workItem from="1704198830060" duration="5547000" />
-      <workItem from="1704261820577" duration="2791000" />
+      <workItem from="1704261820577" duration="6324000" />
+      <workItem from="1704431496986" duration="9197000" />
     </task>
     <task id="LOCAL-00001" summary="공공와이파이 데이터 조회 및 파싱 기능 추가">
       <option name="closed" value="true" />
@@ -347,7 +368,39 @@
       <option name="project" value="LOCAL" />
       <updated>1703948967180</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="API key위한 .env파일 추가">
+      <option name="closed" value="true" />
+      <created>1704264859704</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1704264859704</updated>
+    </task>
+    <task id="LOCAL-00009" summary=".env 추가">
+      <option name="closed" value="true" />
+      <created>1704266694953</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1704266694953</updated>
+    </task>
+    <task id="LOCAL-00010" summary="와이파이 정보 조회 기능 사용자 현재 위치 기반 위도, 경도 입력 기능 추가">
+      <option name="closed" value="true" />
+      <created>1704440443891</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1704440443891</updated>
+    </task>
+    <task id="LOCAL-00011" summary=".env 와 config.properties 삭제">
+      <option name="closed" value="true" />
+      <created>1704440466577</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1704440466577</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -372,6 +425,10 @@
     <MESSAGE value="congif.properties추가" />
     <MESSAGE value="workspace.xml에 config, .gitignore 및 workspace 설정 변경 사항 업데이트" />
     <MESSAGE value="apiKey 로딩 메소드 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="apiKey 로딩 메소드 구현" />
+    <MESSAGE value="API key위한 .env파일 추가" />
+    <MESSAGE value=".env 추가" />
+    <MESSAGE value="와이파이 정보 조회 기능 사용자 현재 위치 기반 위도, 경도 입력 기능 추가" />
+    <MESSAGE value=".env 와 config.properties 삭제" />
+    <option name="LAST_COMMIT_MESSAGE" value=".env 와 config.properties 삭제" />
   </component>
 </project>
