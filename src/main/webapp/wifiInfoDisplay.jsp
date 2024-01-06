@@ -44,7 +44,7 @@
         <th>설치유형</th>
         <th>설치기관</th>
         <th>서비스 구분</th>
-        <th>망종류</th>
+<%--        <th>망종류</th>--%>
         <th>설치년도</th>
         <th>실내외구분</th>
         <th>WIFI접속환경</th>
@@ -63,7 +63,7 @@
         <td><%= spot.getDistance() %></td>
         <td><%= spot.getManagerNo() %></td>
         <td><%= spot.getWard() %></td>
-        <td><%= spot.getWifiName() %></td>
+        <td><a href="detail.jsp?mgrNo=<%= spot.getManagerNo() %>"><%= spot.getWifiName() %></a></td>
         <td><%= spot.getAddress1() %></td>
         <td><%= spot.getAddress2() %></td>
         <td><%= spot.getInstallationFloor() %></td>
@@ -82,7 +82,7 @@
     } else {
     %>
     <tr>
-        <td colspan="17">와이파이 정보를 불러오는 데 실패하였습니다.</td>
+        out.print("<tr><td colspan='17'>와이파이 정보를 불러오는 데 실패하였습니다.</td></tr>");
     </tr>
     <%
         }
