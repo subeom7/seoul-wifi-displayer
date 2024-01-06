@@ -22,7 +22,7 @@ public class PublicWifiService {
     }
 
     public List<WifiSpot> loadWifiSpots(double lat, double lng) throws Exception {
-        System.out.println(apiKey);
+
         // 와이파이 스팟 객체들을 담을 리스트
         List<WifiSpot> spots = new ArrayList<>();
         // API URL 구성
@@ -61,7 +61,7 @@ public class PublicWifiService {
             spot.setWorkDate(eElement.getElementsByTagName("WORK_DTTM").item(0).getTextContent());
 
             // 위도와 경도를 기반으로 거리 계산 및 설정
-            spot.setDistance(calculateDistance(lat, lng, spot.getLatitude(), spot.getLongitude()));
+            spot.setDistance(calculateDistance(lat, lng, spot.getLongitude(), spot.getLatitude()));
 
             spots.add(spot); // 리스트에 WifiSpot 추가
         }
