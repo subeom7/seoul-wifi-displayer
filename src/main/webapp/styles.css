@@ -44,3 +44,19 @@ thead, tfoot {
 
 }
 
+.data-cell {
+    border: 1px solid #ddd; /* 칸마다 border 추가 */
+    padding: 8px; /* 패딩 추가*/
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light grey color */
+}
+
+tbody tr:hover td {
+    background-color: #bfbfbf; /* Dark grey color */
+}
+/* header는 hover해도 색깔 유지하게 */
+thead tr:hover td {
+    background-color: inherit;
+}
