@@ -1,0 +1,43 @@
+table {
+    width: 100%;
+    border: 1px solid lightgray;
+    table-layout: fixed;
+}
+
+.menu {
+    padding-bottom: 10px;
+}
+
+th, td {
+    text-align: left;
+    padding: 4px 8px;
+}
+
+th {
+    height: 45px;
+    background-color: #04ac6c;
+    width: 30%;
+    color: #fff
+}
+
+
+thead, tfoot {
+    border: 2px solid black;
+}
+
+.data-cell {
+    border: 1px solid #ddd; /* 칸마다 border 추가 */
+    padding: 8px; /* 패딩 추가*/
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light grey color */
+}
+
+tbody tr:hover td {
+    background-color: #bfbfbf; /* Dark grey color */
+}
+/* header는 hover해도 색깔 유지하게 */
+thead tr:hover td {
+    background-color: inherit;
+}
