@@ -9,13 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87b63020-f73a-4f4c-8aeb-bf460e3ff2bf" name="Changes" comment="즐겨찾기 그룹 관리 jsp생성">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/FavoriteGroupManagement.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/detailStyles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/service.jsp" afterDir="false" />
+    <list default="true" id="87b63020-f73a-4f4c-8aeb-bf460e3ff2bf" name="Changes" comment="즐겨찾기 그룹 관리 jsp 페이지 생성">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/subeom/service/PublicWifiService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/subeom/service/PublicWifiService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/subeom/service/SearchServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/subeom/service/SearchServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/FavoriteGroupManagement.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/bookmark-group.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/FavoritesView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/bookmark-list.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/detail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/wifiInfoDisplay.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/wifiInfoDisplay.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -316,7 +318,7 @@
       <workItem from="1704555797889" duration="4105000" />
       <workItem from="1704609374516" duration="3111000" />
       <workItem from="1704639316566" duration="735000" />
-      <workItem from="1704695088182" duration="10405000" />
+      <workItem from="1704695088182" duration="11744000" />
     </task>
     <task id="LOCAL-00001" summary="공공와이파이 데이터 조회 및 파싱 기능 추가">
       <option name="closed" value="true" />
@@ -526,7 +528,39 @@
       <option name="project" value="LOCAL" />
       <updated>1704725739267</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="detail 페이지를 위한 style.css 생성">
+      <option name="closed" value="true" />
+      <created>1704725802686</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1704725802686</updated>
+    </task>
+    <task id="LOCAL-00028" summary="경도 위도 인자값 바뀐 오류 수정">
+      <option name="closed" value="true" />
+      <created>1704725862477</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1704725862477</updated>
+    </task>
+    <task id="LOCAL-00029" summary="workspace.xml 업데이트">
+      <option name="closed" value="true" />
+      <created>1704725878711</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1704725878711</updated>
+    </task>
+    <task id="LOCAL-00030" summary="즐겨찾기 그룹 관리 jsp 페이지 생성">
+      <option name="closed" value="true" />
+      <created>1704725897206</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1704725897206</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -561,10 +595,13 @@
     <MESSAGE value="디버그 로그삭제" />
     <MESSAGE value="wifi detail정보 표시 위한 jsp생성" />
     <MESSAGE value="주석 정리" />
-    <MESSAGE value="workspace.xml 업데이트" />
     <MESSAGE value="detail.jsp에 와이파이 상세 데이터 테이블 표시 기능 추가&#10;- detail.jsp에서 와이파이 상세 정보를 테이블 형태로 표시하도록 함.&#10;- 모든 와이파이 데이터(거리, 관리번호, 자치구 등)를 detail.jsp에서 처리할 수 있도록 요청 파라미터 수집 및 테이블에 표시하는 로직 추가." />
     <MESSAGE value="데이터 셀 테두리, 패딩 및 호버 효과 추가&#10;&#10;- 데이터 셀에 1px solid 테두리와 8px 패딩 추가&#10;- 짝수 행의 배경색을 연한 회색으로 설정&#10;- 호버시 셀의 배경색을 어두운 회색으로 변경&#10;- 헤더의 셀은 호버해도 배경색 유지" />
     <MESSAGE value="즐겨찾기 그룹 관리 jsp생성" />
-    <option name="LAST_COMMIT_MESSAGE" value="즐겨찾기 그룹 관리 jsp생성" />
+    <MESSAGE value="detail 페이지를 위한 style.css 생성" />
+    <MESSAGE value="경도 위도 인자값 바뀐 오류 수정" />
+    <MESSAGE value="workspace.xml 업데이트" />
+    <MESSAGE value="즐겨찾기 그룹 관리 jsp 페이지 생성" />
+    <option name="LAST_COMMIT_MESSAGE" value="즐겨찾기 그룹 관리 jsp 페이지 생성" />
   </component>
 </project>
