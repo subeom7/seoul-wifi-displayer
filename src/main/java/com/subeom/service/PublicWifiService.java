@@ -84,7 +84,7 @@ public class PublicWifiService {
         double distance = earthRadius * c; // 거리(km)
         return distance;
     }
-    // 정수로 안전하게 년도 파싱
+    // 정수로 년도 파싱
     private int parseYear(String yearStr) {
         try {
             return Integer.parseInt(yearStr);

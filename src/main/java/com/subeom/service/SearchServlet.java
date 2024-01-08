@@ -29,7 +29,7 @@ public class SearchServlet extends HttpServlet {
         } catch (Exception e) {
 
             e.printStackTrace();
-            response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "An error occurred while retrieving wifi information.");
+            response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "와이파이 정보를 가져올때 오류가 발생했습니다.");
         }
     }
 }
