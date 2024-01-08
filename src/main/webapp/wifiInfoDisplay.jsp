@@ -60,22 +60,41 @@
             for(WifiSpot spot : wifiSpots) {
     %>
     <tr>
-        <td><%= spot.getDistance() %></td>
-        <td><%= spot.getManagerNo() %></td>
-        <td><%= spot.getWard() %></td>
-        <td><a href="detail.jsp?mgrNo=<%= spot.getManagerNo() %>"><%= spot.getWifiName() %></a></td>
-        <td><%= spot.getAddress1() %></td>
-        <td><%= spot.getAddress2() %></td>
-        <td><%= spot.getInstallationFloor() %></td>
-        <td><%= spot.getInstallationType() %></td>
-        <td><%= spot.getServiceProvider() %></td>
-        <td><%= spot.getNetType() %></td>
-        <td><%= spot.getInstallYear() %></td>
-        <td><%= spot.getIndoorOutdoor() %></td>
-        <td><%= spot.getWifiEnvironment() %></td>
-        <td><%= spot.getLatitude() %></td>
-        <td><%= spot.getLongitude() %></td>
-        <td><%= spot.getWorkDate() %></td>
+        <td class="data-cell"><%= spot.getDistance() %></td>
+        <td class="data-cell"><%= spot.getManagerNo() %></td>
+        <td class="data-cell"><%= spot.getWard() %></td>
+        <td class="data-cell"><a href="detail.jsp?distance=<%= spot.getDistance() %>
+            &managerNo=<%= spot.getManagerNo() %>
+            &ward=<%= spot.getWard() %>
+            &wifiName=<%= spot.getWifiName() %>
+            &address1=<%= spot.getAddress1() %>
+            &address2=<%= spot.getAddress2() %>
+            &installationFloor=<%= spot.getInstallationFloor() %>
+            &installationType=<%= spot.getInstallationType() %>
+
+            &serviceProvider=<%= spot.getServiceProvider() %>
+            &netType=<%= spot.getNetType() %>
+            &installYear=<%= spot.getInstallYear() %>
+            &indoorOutdoor=<%= spot.getIndoorOutdoor() %>
+            &wifiEnvironment=<%= spot.getWifiEnvironment() %>
+            &latitude=<%= spot.getLatitude() %>
+            &longitude=<%= spot.getLongitude() %>
+            &workDate=<%= spot.getManagerNo() %>">
+
+            <%= spot.getWifiName() %> </a></td>
+
+        <td class="data-cell"><%= spot.getAddress1() %></td>
+        <td class="data-cell"><%= spot.getAddress2() %></td>
+        <td class="data-cell"><%= spot.getInstallationFloor() %></td>
+        <td class="data-cell"><%= spot.getInstallationType() %></td>
+        <td class="data-cell"><%= spot.getServiceProvider() %></td>
+        <td class="data-cell"><%= spot.getNetType() %></td>
+        <td class="data-cell"><%= spot.getInstallYear() %></td>
+        <td class="data-cell"><%= spot.getIndoorOutdoor() %></td>
+        <td class="data-cell"><%= spot.getWifiEnvironment() %></td>
+        <td class="data-cell"><%= spot.getLatitude() %></td>
+        <td class="data-cell"><%= spot.getLongitude() %></td>
+        <td class="data-cell"><%= spot.getWorkDate() %></td>
     </tr>
     <%
         }
