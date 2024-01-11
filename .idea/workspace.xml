@@ -9,15 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87b63020-f73a-4f4c-8aeb-bf460e3ff2bf" name="Changes" comment="즐겨찾기 그룹 관리 jsp 페이지 생성">
+    <list default="true" id="87b63020-f73a-4f4c-8aeb-bf460e3ff2bf" name="Changes" comment="sqlite-jdbc 추가">
+      <change afterPath="$PROJECT_DIR$/database/History.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/subeom/service/HistoryRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/subeom/service/PublicWifiService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/subeom/service/PublicWifiService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/subeom/service/SearchServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/subeom/service/SearchServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/FavoriteGroupManagement.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/bookmark-group.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/FavoritesView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/bookmark-list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/detail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/history.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/history.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/wifiInfoDisplay.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/wifiInfoDisplay.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,9 +27,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="CSS File" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -69,33 +69,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/subeo/IdeaProjects/Mission1-Project",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/subeo/Downloads&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\subeo\IdeaProjects\Mission1-Project\database" />
+      <recent name="C:\Users\subeo\Downloads" />
       <recent name="C:\Users\subeo\IdeaProjects\Mission1-Project" />
+      <recent name="C:\Users\subeo\IdeaProjects\Mission1-Project\src\main\resources" />
       <recent name="C:\Users\subeo\IdeaProjects\Mission1-Project\src\main\webapp" />
-      <recent name="C:\Users\subeo\IdeaProjects\Mission1-Project\src\main\webapp\WEB-INF" />
-      <recent name="C:\Users\subeo\IdeaProjects\Mission1-Project\src\main\webapp\WEB-INF\lib" />
-      <recent name="C:\Users\subeo\IdeaProjects\Mission1-Project\src\main\java\com\subeom\service" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.84">
@@ -214,11 +214,21 @@
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="a9a9db11-f278-4955-9612-0d80d0d1f808" />
       </server-settings>
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
+      <log_file alias="Tomcat Manager Log" path="%IDEA_RUN:CATALINA_BASE%/logs/manager.*" />
+      <log_file alias="Tomcat Host Manager Log" path="%IDEA_RUN:CATALINA_BASE%/logs/host-manager.*" />
+      <log_file checked="false" alias="Tomcat Localhost Access Log" path="%IDEA_RUN:CATALINA_BASE%/logs/localhost_access_log.*" />
+      <log_file checked="false" alias="Tomcat Localhost Log" path="%IDEA_RUN:CATALINA_BASE%/logs/localhost.*" />
+      <log_file checked="false" alias="Tomcat Catalina Log" path="%IDEA_RUN:CATALINA_BASE%/logs/catalina.*" />
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </extension>
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="56757" />
       </RunnerSettings>
@@ -318,7 +328,12 @@
       <workItem from="1704555797889" duration="4105000" />
       <workItem from="1704609374516" duration="3111000" />
       <workItem from="1704639316566" duration="735000" />
-      <workItem from="1704695088182" duration="11744000" />
+      <workItem from="1704695088182" duration="13270000" />
+      <workItem from="1704799638718" duration="1370000" />
+      <workItem from="1704860364514" duration="4212000" />
+      <workItem from="1704865166419" duration="6408000" />
+      <workItem from="1704957473699" duration="1231000" />
+      <workItem from="1704959789903" duration="4042000" />
     </task>
     <task id="LOCAL-00001" summary="공공와이파이 데이터 조회 및 파싱 기능 추가">
       <option name="closed" value="true" />
@@ -560,7 +575,95 @@
       <option name="project" value="LOCAL" />
       <updated>1704725897206</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="파일명 예시와 동일하게 변경">
+      <option name="closed" value="true" />
+      <created>1704727192189</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1704727192189</updated>
+    </task>
+    <task id="LOCAL-00032" summary="파일명 예시와 동일하게 변경">
+      <option name="closed" value="true" />
+      <created>1704727201116</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1704727201116</updated>
+    </task>
+    <task id="LOCAL-00033" summary="파일명 예시와 동일하게 변경">
+      <option name="closed" value="true" />
+      <created>1704727218033</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1704727218033</updated>
+    </task>
+    <task id="LOCAL-00034" summary="위치 히스토리 목록 기능 화면 jsp생성">
+      <option name="closed" value="true" />
+      <created>1704727248483</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1704727248483</updated>
+    </task>
+    <task id="LOCAL-00035" summary="주석 수정">
+      <option name="closed" value="true" />
+      <created>1704727283563</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1704727283563</updated>
+    </task>
+    <task id="LOCAL-00036" summary="즐겨 찾기관련 파일명 변경">
+      <option name="closed" value="true" />
+      <created>1704727310085</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1704727310085</updated>
+    </task>
+    <task id="LOCAL-00037" summary="workspace.xml 수정">
+      <option name="closed" value="true" />
+      <created>1704727319858</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1704727319858</updated>
+    </task>
+    <task id="LOCAL-00038" summary="와이파이 정보 생성 페이지를 위한 jsp페이지 생성">
+      <option name="closed" value="true" />
+      <created>1704880108132</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1704880108132</updated>
+    </task>
+    <task id="LOCAL-00039" summary="위치 히스토리 목록과 Open API 와이파이 정보 가져오기 jsp페이지명 변경">
+      <option name="closed" value="true" />
+      <created>1704880140933</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1704880140933</updated>
+    </task>
+    <task id="LOCAL-00040" summary="history 삭제기능을 위한 servlet 생성">
+      <option name="closed" value="true" />
+      <created>1704963709869</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1704963709869</updated>
+    </task>
+    <task id="LOCAL-00041" summary="sqlite-jdbc 추가">
+      <option name="closed" value="true" />
+      <created>1704963813603</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1704963813603</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -578,14 +681,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="공공와이파이 데이터 조회 및 파싱 기능 추가" />
-    <MESSAGE value="config.properties 추가" />
-    <MESSAGE value="JDK버전 21 -&gt; 1.8로 수정" />
-    <MESSAGE value="congif.properties추가" />
-    <MESSAGE value="workspace.xml에 config, .gitignore 및 workspace 설정 변경 사항 업데이트" />
-    <MESSAGE value="apiKey 로딩 메소드 구현" />
-    <MESSAGE value="API key위한 .env파일 추가" />
-    <MESSAGE value=".env 추가" />
     <MESSAGE value="와이파이 정보 조회 기능 사용자 현재 위치 기반 위도, 경도 입력 기능 추가" />
     <MESSAGE value=".env 와 config.properties 삭제" />
     <MESSAGE value=" 공공 와이파이 서비스 로직 구현&#10; - 사용자 위치 기반 와이파이 정보 로드 메소드 구현.&#10; - API 응답으로부터 와이파이 스팟 정보 파싱 및 객체 생성." />
@@ -602,6 +697,19 @@
     <MESSAGE value="경도 위도 인자값 바뀐 오류 수정" />
     <MESSAGE value="workspace.xml 업데이트" />
     <MESSAGE value="즐겨찾기 그룹 관리 jsp 페이지 생성" />
-    <option name="LAST_COMMIT_MESSAGE" value="즐겨찾기 그룹 관리 jsp 페이지 생성" />
+    <MESSAGE value="파일명 예시와 동일하게 변경" />
+    <MESSAGE value="위치 히스토리 목록 기능 화면 jsp생성" />
+    <MESSAGE value="주석 수정" />
+    <MESSAGE value="즐겨 찾기관련 파일명 변경" />
+    <MESSAGE value="workspace.xml 수정" />
+    <MESSAGE value="와이파이 정보 생성 페이지를 위한 jsp페이지 생성" />
+    <MESSAGE value="위치 히스토리 목록과 Open API 와이파이 정보 가져오기 jsp페이지명 변경" />
+    <MESSAGE value="history 삭제기능을 위한 servlet 생성" />
+    <MESSAGE value="sqlite-jdbc 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="sqlite-jdbc 추가" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
