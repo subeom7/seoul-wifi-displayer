@@ -3,9 +3,7 @@ package com.subeom.service;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import org.w3c.dom.Document;
@@ -25,8 +23,9 @@ public class PublicWifiService {
 
         // 와이파이 스팟 객체들을 담을 리스트
         List<WifiSpot> spots = new ArrayList<>();
+        Set<String> wifiNames = new HashSet<>();
         // API URL 구성
-        String urlStr = "http://openapi.seoul.go.kr:8088/" + apiKey + "/xml/TbPublicWifiInfo/1/20/";
+        String urlStr = "http://openapi.seoul.go.kr:8088/" + apiKey + "/xml/TbPublicWifiInfo/1/300/";
         URL url = new URL(urlStr);
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
         conn.setRequestMethod("GET");
@@ -63,7 +62,14 @@ public class PublicWifiService {
             // 위도와 경도를 기반으로 거리 계산 및 설정
             spot.setDistance(calculateDistance(lat, lng, spot.getLatitude(), spot.getLongitude()));
 
-            spots.add(spot); // 리스트에 WifiSpot 추가
+            //중복 방지
+//            String wifiName = eElement.getElementsByTagName("X_SWIFI_MAIN_NM").item(0).getTextContent();
+//            if (!wifiNames.contains(wifiName)) {
+//                wifiNames.add(wifiName);
+//            spots.add(spot); // 리스트에 WifiSpot 추가
+//            }
+                spots.add(spot); // 리스트에 WifiSpot 추가
+
         }
 
 
