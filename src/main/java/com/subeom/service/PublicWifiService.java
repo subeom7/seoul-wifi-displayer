@@ -9,6 +9,8 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public class PublicWifiService {
 
@@ -88,7 +90,9 @@ public class PublicWifiService {
                         Math.sin(dLng/2) * Math.sin(dLng/2);
         double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
         double distance = earthRadius * c; // 거리(km)
-        return distance;
+
+        BigDecimal bd = new BigDecimal(distance).setScale(4, RoundingMode.HALF_UP);
+        return bd.doubleValue();
     }
     // 정수로 년도 파싱
     private int parseYear(String yearStr) {
