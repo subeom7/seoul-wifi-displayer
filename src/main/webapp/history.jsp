@@ -4,11 +4,28 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>History Records</title>
+    <title>와이파이 정보 구하기</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+
+
+
 <body>
+<h1>위치 히스토리 목록</h1>
+<div class="menu">
+    <a href="index.jsp">홈</a> |
+    <a href="history.jsp">위치 히스토리 목록</a> |
+    <a href="load-wifi.jsp">Open API 와이파이 정보 가져오기</a> |
+    <a href="bookmark-list.jsp">즐겨 찾기 보기</a> |
+    <a href="bookmark-group.jsp">즐겨 찾기 그룹 관리</a>
+</div>
+
 <%
+    try {
+        Class.forName("org.sqlite.JDBC");
+    } catch (ClassNotFoundException e) {
+        throw new RuntimeException(e);
+    }
     List<HistoryRecord> historyRecords = new ArrayList<>();
     String selectSql = "SELECT * FROM history";
 
@@ -30,17 +47,19 @@
 %>
 
 <table>
+    <thead>
     <tr>
         <th>ID</th>
-        <th>x값</th>
-        <th>y값</th>
-        <th>검색 시간</th>
+        <th>X좌표</th>
+        <th>Y좌표</th>
+        <th>조회일자</th>
         <th>비고</th>
     </tr>
+    </thead>
     <%
         for (HistoryRecord record : historyRecords) {
     %>
-    <tr>
+    <tr class="history-data">
         <td><%= record.getId() %></td>
         <td><%= record.getLatitude() %></td>
         <td><%= record.getLongitude() %></td>
