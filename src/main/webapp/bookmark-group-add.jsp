@@ -30,21 +30,8 @@
             <button type="submit" class="add-bookmark-button">추가</button>
         </div>
     </form>
-
-    <table>
-        onclick="addBookmark()"
-
-
-    </table>
+    
 </div>
 
-<script>
-    function addBookmark() {
-        var bookmarkName = document.getElementById("bookmarkName").value;
-        var bookmarkOrder = document.getElementById("bookmarkOrder").value;
-        window.location.href = 'AddBookmarkGroupServlet?bookmarkName=' + bookmarkName + '&bookmarkOrder=' + bookmarkOrder;
-    }
-
-</script>
 </body>
 </html>
