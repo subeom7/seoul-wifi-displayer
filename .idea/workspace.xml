@@ -9,22 +9,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87b63020-f73a-4f4c-8aeb-bf460e3ff2bf" name="Changes" comment="북마크 추가를 위한 Servlet생성">
+    <list default="true" id="87b63020-f73a-4f4c-8aeb-bf460e3ff2bf" name="Changes" comment="workspace.xml 업데이트">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/database/History.db" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/database/bookmark_groups.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/subeom/service/AddBookmarkServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/subeom/service/Bookmark.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/subeom/service/BookmarkDatabaseUtil.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/subeom/service/BookmarkDeleteServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/subeom/service/BookmarkGroup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bookmark-group-add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/subeom/service/BookmarkGroupDatabaseUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/subeom/service/BookmarkGroupDeleteServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/subeom/service/PublicWifiService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/subeom/service/PublicWifiService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/bookmark-group-add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/bookmark-group-add.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/bookmark-group.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/bookmark-group.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/bookmark-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/bookmark-list.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/detail.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/detailStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/detailStyles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/history.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/history.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/load-wifi.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/load-wifi.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,26 +78,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/subeo/IdeaProjects/Mission1-Project/database&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/subeo/IdeaProjects/Mission1-Project/database",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\subeo\IdeaProjects\Mission1-Project\database" />
@@ -346,55 +349,8 @@
       <workItem from="1704959789903" duration="8378000" />
       <workItem from="1705034564492" duration="1593000" />
       <workItem from="1705038150479" duration="7742000" />
-      <workItem from="1705047220852" duration="3153000" />
-    </task>
-    <task id="LOCAL-00001" summary="공공와이파이 데이터 조회 및 파싱 기능 추가">
-      <option name="closed" value="true" />
-      <created>1703863883970</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1703863883970</updated>
-    </task>
-    <task id="LOCAL-00002" summary="config.properties 추가">
-      <option name="closed" value="true" />
-      <created>1703863952686</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1703863952686</updated>
-    </task>
-    <task id="LOCAL-00003" summary="JDK버전 21 -&gt; 1.8로 수정">
-      <option name="closed" value="true" />
-      <created>1703863975118</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1703863975118</updated>
-    </task>
-    <task id="LOCAL-00004" summary="workspace.xml 업데이트">
-      <option name="closed" value="true" />
-      <created>1703864143835</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1703864143835</updated>
-    </task>
-    <task id="LOCAL-00005" summary="congif.properties추가">
-      <option name="closed" value="true" />
-      <created>1703864428510</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1703864428510</updated>
-    </task>
-    <task id="LOCAL-00006" summary="workspace.xml에 config, .gitignore 및 workspace 설정 변경 사항 업데이트">
-      <option name="closed" value="true" />
-      <created>1703864531711</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1703864531711</updated>
+      <workItem from="1705047220852" duration="8372000" />
+      <workItem from="1705124359531" duration="5338000" />
     </task>
     <task id="LOCAL-00007" summary="apiKey 로딩 메소드 구현">
       <option name="closed" value="true" />
@@ -732,7 +688,63 @@
       <option name="project" value="LOCAL" />
       <updated>1705050361408</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="즐겨찾기 그룹 관리 페이지 데이터베이스 연동 구현">
+      <option name="closed" value="true" />
+      <created>1705050447676</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1705050447676</updated>
+    </task>
+    <task id="LOCAL-00050" summary="즐겨찾기 그룹 추가 기능을 위한 jsp생성">
+      <option name="closed" value="true" />
+      <created>1705050476196</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1705050476196</updated>
+    </task>
+    <task id="LOCAL-00051" summary="주석 정리">
+      <option name="closed" value="true" />
+      <created>1705050526210</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1705050526210</updated>
+    </task>
+    <task id="LOCAL-00052" summary="거리 계산시, 거리 4자리 까지 반올림">
+      <option name="closed" value="true" />
+      <created>1705050600859</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1705050600859</updated>
+    </task>
+    <task id="LOCAL-00053" summary="BookmarkGroup display를 위한 클래스 생성">
+      <option name="closed" value="true" />
+      <created>1705050635441</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1705050635441</updated>
+    </task>
+    <task id="LOCAL-00054" summary="스타일링 &amp; 사이즈 업데이트">
+      <option name="closed" value="true" />
+      <created>1705050671251</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1705050671251</updated>
+    </task>
+    <task id="LOCAL-00055" summary="workspace.xml 업데이트">
+      <option name="closed" value="true" />
+      <created>1705050686408</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1705050686408</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -750,12 +762,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="디버그 로그삭제" />
-    <MESSAGE value="wifi detail정보 표시 위한 jsp생성" />
-    <MESSAGE value="주석 정리" />
-    <MESSAGE value="detail.jsp에 와이파이 상세 데이터 테이블 표시 기능 추가&#10;- detail.jsp에서 와이파이 상세 정보를 테이블 형태로 표시하도록 함.&#10;- 모든 와이파이 데이터(거리, 관리번호, 자치구 등)를 detail.jsp에서 처리할 수 있도록 요청 파라미터 수집 및 테이블에 표시하는 로직 추가." />
-    <MESSAGE value="데이터 셀 테두리, 패딩 및 호버 효과 추가&#10;&#10;- 데이터 셀에 1px solid 테두리와 8px 패딩 추가&#10;- 짝수 행의 배경색을 연한 회색으로 설정&#10;- 호버시 셀의 배경색을 어두운 회색으로 변경&#10;- 헤더의 셀은 호버해도 배경색 유지" />
-    <MESSAGE value="즐겨찾기 그룹 관리 jsp생성" />
     <MESSAGE value="detail 페이지를 위한 style.css 생성" />
     <MESSAGE value="경도 위도 인자값 바뀐 오류 수정" />
     <MESSAGE value="즐겨찾기 그룹 관리 jsp 페이지 생성" />
@@ -773,9 +779,15 @@
     <MESSAGE value="history.db 추가" />
     <MESSAGE value="주석 업데이트" />
     <MESSAGE value="SearchServlet 수정으로 사용자 위치 검색 이력을 SQLite 데이터베이스에 저장" />
-    <MESSAGE value="workspace.xml 업데이트" />
     <MESSAGE value="북마크 추가를 위한 Servlet생성" />
-    <option name="LAST_COMMIT_MESSAGE" value="북마크 추가를 위한 Servlet생성" />
+    <MESSAGE value="즐겨찾기 그룹 관리 페이지 데이터베이스 연동 구현" />
+    <MESSAGE value="즐겨찾기 그룹 추가 기능을 위한 jsp생성" />
+    <MESSAGE value="주석 정리" />
+    <MESSAGE value="거리 계산시, 거리 4자리 까지 반올림" />
+    <MESSAGE value="BookmarkGroup display를 위한 클래스 생성" />
+    <MESSAGE value="스타일링 &amp; 사이즈 업데이트" />
+    <MESSAGE value="workspace.xml 업데이트" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml 업데이트" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
