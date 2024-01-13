@@ -1,7 +1,11 @@
-<%@ page import="com.subeom.service.WifiSpot" %>
-<%@ page import="com.subeom.service.PublicWifiService" %>
+<%@ page import="java.sql.*" %>
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="com.subeom.service.BookmarkGroup" %>
+<%@ page import="com.subeom.service.AddBookmarkGroupServlet" %>
 <%@ page import="java.util.List" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="com.subeom.service.BookmarkGroupDatabaseUtil" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
 <html>
 <head>
     <meta charset="UTF-8">
@@ -19,17 +23,29 @@
     <a href="bookmark-group.jsp">즐겨찾기 그룹 관리</a>
 </div>
 
+<form action="AddBookmarkServlet" method="post">
 <%--북마크 그룹 드랍다운 메뉴--%>
-<select class="bookmark-group-dropdown" name="bookmarkGroup">
-    <option value="">북마크 그룹 이름 선택</option>
-    <!-- DB구축 후 server-side 코드 구현해서 북마크 그룹 가져옴 -->
-</select>
-<button type="button" class="favorites-button" onclick="searchNearbyWipi()">즐겨찾기 추가하기</button>
+    <select class="bookmark-group-dropdown" name="bookmarkName">
+        <option value="">북마크 그룹 이름 선택</option>
+        <%
+            List<BookmarkGroup> groups = BookmarkGroupDatabaseUtil.getBookmarkGroups();
+            for (BookmarkGroup group : groups) {
+        %>
+        <option value="<%= group.getName() %>"><%= group.getName() %></option>
+        <%
+            }
+        %>
+    </select>
+    <% String wifiName = request.getParameter("wifiName"); %>
+    <input type="hidden" name="wifiName" value="<%= wifiName %>">
+    <button type="submit" class="favorites-button">즐겨찾기 추가하기</button>
+</form>
+
 <%
     String distance = request.getParameter("distance");
     String managerNo = request.getParameter("managerNo");
     String ward = request.getParameter("ward");
-    String wifiName = request.getParameter("wifiName");
+    wifiName = request.getParameter("wifiName");
     String address1 = request.getParameter("address1");
     String address2 = request.getParameter("address2");
     String installationFloor = request.getParameter("installationFloor");
