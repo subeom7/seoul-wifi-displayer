@@ -1,9 +1,6 @@
 package com.subeom.service;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,6 +20,7 @@ public class BookmarkGroupDatabaseUtil {
                     group.setName(rs.getString("bookmarkName"));
                     group.setOrder(rs.getInt("bookmarkOrder"));
                     group.setAddTimestamp(rs.getString("addTimestamp"));
+                    group.setEditTimestamp(rs.getString("editTimestamp"));
                     groups.add(group);
                 }
             }
@@ -30,5 +28,12 @@ public class BookmarkGroupDatabaseUtil {
             e.printStackTrace(); // Consider better error handling
         }
         return groups;
+    }
+
+    public static boolean isTableExists(Connection conn, String tableName) throws SQLException {
+        DatabaseMetaData dbm = conn.getMetaData();
+        try (ResultSet tables = dbm.getTables(null, null, tableName, null)) {
+            return tables.next();
+        }
     }
 }
