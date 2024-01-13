@@ -6,6 +6,8 @@ public class BookmarkGroup {
     private int order;
     private String addTimestamp;
 
+    private String editTimestamp;
+
     // Constructor
     public BookmarkGroup() {
     }
@@ -41,5 +43,13 @@ public class BookmarkGroup {
 
     public void setAddTimestamp(String addTimestamp) {
         this.addTimestamp = addTimestamp;
+    }
+
+    public String getEditTimestamp() {
+        return editTimestamp;
+    }
+
+    public void setEditTimestamp(String editTimestamp) {
+        this.editTimestamp = editTimestamp;
     }
 }
