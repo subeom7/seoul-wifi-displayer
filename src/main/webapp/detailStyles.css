@@ -50,3 +50,36 @@ tbody tr:hover td {
 thead tr:hover td {
     background-color: inherit;
 }
+
+.button-group {
+    display: flex; /* Flexbox 사용 */
+    /*margin: 5px;*/
+    justify-content: center;
+}
+
+ a {
+    margin-right: 10px; /* 첫 번째 버튼에 오른쪽 마진 적용 */
+}
+
+ input {
+    margin-left: 10px; /* 두번째 번째 버튼에 왼쪽 마진 적용 */
+}
+
+.button {
+    width: 40px;
+    height: 25px;
+    text-align: center;
+}
+
+.form-actions {
+    text-align: center; /* 컨테이너의 텍스트 중앙 정렬. */
+    margin-top: 20px; /* 상단 여백 추가 */
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light grey color */
+}
+
+table tr:hover td {
+    background-color: #bfbfbf; /* Dark grey color */
+}

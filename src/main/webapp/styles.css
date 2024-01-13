@@ -60,3 +60,14 @@ tbody tr:hover td {
 thead tr:hover td {
     background-color: inherit;
 }
+.button-group {
+    display: flex; /* Flexbox 사용 */
+    /*margin: 5px;*/
+    justify-content: space-evenly;
+}
+
+.button {
+    width: 60px;
+    height: 30px;
+    margin-top: 10px;
+}
