@@ -26,30 +26,48 @@ public class AddBookmarkGroupServlet extends HttpServlet {
                         "id INTEGER PRIMARY KEY AUTOINCREMENT," +
                         "bookmarkName TEXT," +
                         "bookmarkOrder REAL," +
-                        "addTimestamp TEXT);";
+                        "addTimestamp TEXT," +
+                        "editTimestamp TEXT);";
                 stmt.execute(createTableSQL);
             }
         } catch (Exception e) {
             throw new RuntimeException("Failed to initialize database", e);
         }
     }
+
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8");
         String bookmarkName = request.getParameter("bookmarkName");
         int bookmarkOrder = Integer.parseInt(request.getParameter("bookmarkOrder"));
+        String id = request.getParameter("id");
 
-        // Database connection and insertion logic
-        try (Connection conn = DriverManager.getConnection("jdbc:sqlite:database/bookmark_groups.db");
-             PreparedStatement pstmt = conn.prepareStatement("INSERT INTO bookmark_groups (bookmarkName, bookmarkOrder, addTimestamp) VALUES (?, ?, ?)")) {
+        try (Connection conn = DriverManager.getConnection("jdbc:sqlite:database/bookmark_groups.db")) {
+            String sql;
+            if (id == null || id.isEmpty()) {
+                // ID가 없으면 새로운 북마크 그룹 추가
+                sql = "INSERT INTO bookmark_groups (bookmarkName, bookmarkOrder, addTimestamp) VALUES (?, ?, ?)";
+            } else {
+                // ID가 있으면 기존 북마크 그룹 업데이트
+                sql = "UPDATE bookmark_groups SET bookmarkName = ?, bookmarkOrder = ?, editTimestamp = ? WHERE id = ?";
+            }
 
-            pstmt.setString(1, bookmarkName);
-            pstmt.setInt(2, bookmarkOrder);
-            pstmt.setString(3, LocalDateTime.now().toString());
-            pstmt.executeUpdate();
+            try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
+                pstmt.setString(1, bookmarkName);
+                pstmt.setInt(2, bookmarkOrder);
+                if (id != null && !id.isEmpty()) {
+                    pstmt.setString(3, LocalDateTime.now().toString());
+                    pstmt.setInt(4, Integer.parseInt(id));
+                } else {
+                    pstmt.setString(3, LocalDateTime.now().toString());
+                }
+                pstmt.executeUpdate();
+            }
         } catch (Exception e) {
-            e.printStackTrace(); // Handle exceptions appropriately
+            e.printStackTrace(); // 예외 처리
         }
 
-        response.sendRedirect("bookmark-group.jsp"); // Redirect back to the bookmark group page
+        response.sendRedirect("bookmark-group.jsp"); // 북마크 그룹 페이지로 리디렉션
     }
+
 }
