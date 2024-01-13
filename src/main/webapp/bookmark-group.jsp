@@ -5,6 +5,7 @@
 <%@ page import="com.subeom.service.BookmarkGroup" %>
 <%@ page import="com.subeom.service.BookmarkGroupDatabaseUtil" %>
 <%@ page import="java.util.List" %>
+<%@ page import="java.net.URLEncoder" %>
 <html>
 <head>
     <title>와이파이 정보 구하기</title>
@@ -37,18 +38,24 @@
     <%
         List<BookmarkGroup> groups = BookmarkGroupDatabaseUtil.getBookmarkGroups();
         for (BookmarkGroup group : groups) {
+            String editTimestamp = group.getEditTimestamp();
+            if (editTimestamp == null) {
+                editTimestamp = ""; // editTimestamp가 null이면 빈 문자열로 설정
+            }
     %>
     <tr>
         <td><%= group.getId() %></td>
         <td><%= group.getName() %></td>
         <td><%= group.getOrder() %></td>
         <td><%= group.getAddTimestamp() %></td>
-        <td> <!-- 수정일자 --></td>
+        <td><%= editTimestamp %></td>
         <td>
-            <form action="BookmarkGroupDeleteServlet" method="post">
-            <input type="hidden" name="id" value="<%= group.getId() %>">
-            <input type="submit" value="삭제">
-        </form>
+            <div class="button-group">
+                <a href="bookmark-group-edit.jsp?id=<%= group.getId() %>&bookmarkName=<%= URLEncoder.encode(group.getName(), "UTF-8") %>&order=<%= group.getOrder() %>" class="button">수정</a>
+                <a href="bookmark-group-delete.jsp?id=<%= group.getId() %>&bookmarkName=<%= URLEncoder.encode(group.getName(), "UTF-8") %>&order=<%= group.getOrder() %>" class="button">삭제</a>
+            </div>
+
+
         </td>
     </tr>
     <%
@@ -62,6 +69,11 @@
     document.getElementById('addBookmarkGroupBtn').addEventListener('click', function() {
         window.location.href = 'bookmark-group-add.jsp'; // 사용자를 bookmark-group-add.jsp로 리디렉션
     });
+
+    // document.getElementById('BookmarkGroupDeleteBtn').addEventListener('click', function() {
+    //     window.location.href = 'bookmark-group-delete.jsp'; // 사용자를 bookmark-group-add.jsp로 리디렉션
+    // });
+
 </script>
 </body>
 </html>
