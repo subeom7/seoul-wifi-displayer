@@ -3,7 +3,7 @@
 <%@ page import="java.sql.*" %>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="com.subeom.service.BookmarkGroup" %>
-<%@ page import="com.subeom.service.AddBookmarkGroupServlet" %>
+<%@ page import="com.subeom.service.BookmarkGroupDatabaseUtil" %>
 <%@ page import="java.util.List" %>
 <html>
 <head>
@@ -35,28 +35,7 @@
     </thead>
     <tbody>
     <%
-        AddBookmarkGroupServlet s = new AddBookmarkGroupServlet();
-        s.init();
-        List<BookmarkGroup> groups = new ArrayList<>();
-        try {
-            Class.forName("org.sqlite.JDBC");
-            try (Connection conn = DriverManager.getConnection("jdbc:sqlite:database/bookmark_groups.db");
-                 Statement stmt = conn.createStatement()) {
-
-                ResultSet rs = stmt.executeQuery("SELECT * FROM bookmark_groups");
-                while (rs.next()) {
-                    BookmarkGroup group = new BookmarkGroup();
-                    group.setId(rs.getInt("id"));
-                    group.setName(rs.getString("bookmarkName"));
-                    group.setOrder(rs.getInt("bookmarkOrder"));
-                    group.setAddTimestamp(rs.getString("addTimestamp"));
-                    groups.add(group);
-                }
-            }
-        } catch (Exception e) {
-            e.printStackTrace(); // Handle exceptions appropriately
-        }
-
+        List<BookmarkGroup> groups = BookmarkGroupDatabaseUtil.getBookmarkGroups();
         for (BookmarkGroup group : groups) {
     %>
     <tr>
@@ -65,7 +44,12 @@
         <td><%= group.getOrder() %></td>
         <td><%= group.getAddTimestamp() %></td>
         <td> <!-- 수정일자 --></td>
-        <td> <!-- 비고 --></td>
+        <td>
+            <form action="BookmarkGroupDeleteServlet" method="post">
+            <input type="hidden" name="id" value="<%= group.getId() %>">
+            <input type="submit" value="삭제">
+        </form>
+        </td>
     </tr>
     <%
         }
