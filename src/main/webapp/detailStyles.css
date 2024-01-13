@@ -22,8 +22,10 @@ th {
 
 /* 버튼을 감싸는 컨테이너 스타일 */
 .button-container {
-    text-align: center; /* 가운데 정렬 */
     margin-top: 10px; /* 버튼과 테이블 사이의 여백 조정 */
+}
+.add-bookmark-button{
+    text-align: center; /* 가운데 정렬 */
 }
 
 
