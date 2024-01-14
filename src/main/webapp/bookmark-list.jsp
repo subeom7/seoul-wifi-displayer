@@ -1,6 +1,7 @@
 <%@ page import="com.subeom.service.Bookmark" %>
 <%@ page import="com.subeom.service.BookmarkDatabaseUtil" %>
-<%@ page import="java.util.List" %><%--즐겨 찾기 보기--%>
+<%@ page import="java.util.List" %>
+<%@ page import="java.net.URLEncoder" %><%--즐겨 찾기 보기--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -39,10 +40,9 @@
         <td><%= bookmark.getWifiName() %></td>
         <td><%= bookmark.getAddTimestamp() %></td>
         <td>
-            <form action="BookmarkDeleteServlet" method="post">
-                <input type="hidden" name="id" value="<%= bookmark.getId() %>">
-                <input type="submit" value="삭제">
-            </form>
+                <a href="bookmark-delete.jsp?id=<%= bookmark.getId() %>&bookmarkName=<%= URLEncoder.encode(bookmark.getBookmarkName(), "UTF-8") %>
+               &bookmarkWifiName=<%= URLEncoder.encode(bookmark.getWifiName(), "UTF-8") %>
+                &bookmarkAddTimeStamp=<%= URLEncoder.encode(bookmark.getAddTimestamp(), "UTF-8") %>" class="button">삭제</a>
         </td>
     </tr>
     <%

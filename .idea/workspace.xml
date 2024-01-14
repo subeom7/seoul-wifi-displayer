@@ -9,15 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87b63020-f73a-4f4c-8aeb-bf460e3ff2bf" name="Changes" comment="flexbox / 중앙 정렬 / 마진 적용 css 추가">
+    <list default="true" id="87b63020-f73a-4f4c-8aeb-bf460e3ff2bf" name="Changes" comment="북마크 삭제 jsp페이지 생성">
       <change afterPath="$PROJECT_DIR$/src/main/java/com/subeom/service/RedirectServlet.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/webapp/bookmark-delete.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/subeom/service/AddBookmarkServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/subeom/service/AddBookmarkServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/subeom/service/BookmarkDatabaseUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/subeom/service/BookmarkDatabaseUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/subeom/service/BookmarkGroupDatabaseUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/subeom/service/BookmarkGroupDatabaseUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/bookmark-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/bookmark-list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/detail.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -345,15 +341,7 @@
       <workItem from="1705137434591" duration="10175000" />
       <workItem from="1705159602753" duration="744000" />
       <workItem from="1705160899119" duration="698000" />
-      <workItem from="1705208874153" duration="6077000" />
-    </task>
-    <task id="LOCAL-00024" summary="detail.jsp에 와이파이 상세 데이터 테이블 표시 기능 추가&#10;- detail.jsp에서 와이파이 상세 정보를 테이블 형태로 표시하도록 함.&#10;- 모든 와이파이 데이터(거리, 관리번호, 자치구 등)를 detail.jsp에서 처리할 수 있도록 요청 파라미터 수집 및 테이블에 표시하는 로직 추가.">
-      <option name="closed" value="true" />
-      <created>1704705812297</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1704705812297</updated>
+      <workItem from="1705208874153" duration="6877000" />
     </task>
     <task id="LOCAL-00025" summary="데이터 셀 테두리, 패딩 및 호버 효과 추가&#10;&#10;- 데이터 셀에 1px solid 테두리와 8px 패딩 추가&#10;- 짝수 행의 배경색을 연한 회색으로 설정&#10;- 호버시 셀의 배경색을 어두운 회색으로 변경&#10;- 헤더의 셀은 호버해도 배경색 유지">
       <option name="closed" value="true" />
@@ -739,7 +727,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705158506228</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="코드 정리및 주석 수정">
+      <option name="closed" value="true" />
+      <created>1705221023101</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1705221023101</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -757,7 +753,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="주석 업데이트" />
     <MESSAGE value="SearchServlet 수정으로 사용자 위치 검색 이력을 SQLite 데이터베이스에 저장" />
     <MESSAGE value="즐겨찾기 그룹 관리 페이지 데이터베이스 연동 구현" />
     <MESSAGE value="즐겨찾기 그룹 추가 기능을 위한 jsp생성" />
@@ -782,7 +777,8 @@
     <MESSAGE value="수정 시간 추가" />
     <MESSAGE value="editTimestamp가 null일때 빈 문자열로 설정하는 로직 추가" />
     <MESSAGE value="flexbox / 중앙 정렬 / 마진 적용 css 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="flexbox / 중앙 정렬 / 마진 적용 css 추가" />
+    <MESSAGE value="코드 정리및 주석 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="코드 정리및 주석 수정" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
