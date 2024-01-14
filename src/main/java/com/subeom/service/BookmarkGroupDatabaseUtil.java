@@ -25,7 +25,7 @@ public class BookmarkGroupDatabaseUtil {
                 }
             }
         } catch (Exception e) {
-            e.printStackTrace(); // Consider better error handling
+            e.printStackTrace();
         }
         return groups;
     }

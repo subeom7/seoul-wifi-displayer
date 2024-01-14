@@ -79,10 +79,5 @@
     <tr><th>작업일자</th><td><%= workDate %></td></tr>
 </table>
 
-
-<table>
-
-
-</table>
 </body>
 </html>

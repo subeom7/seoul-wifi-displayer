@@ -37,7 +37,7 @@ public class AddBookmarkServlet extends HttpServlet {
         String bookmarkName = request.getParameter("bookmarkName");
         String wifiName = request.getParameter("wifiName");
 
-        // Database connection and insertion logic
+        // DB connection과 insert로직
         try (Connection conn = DriverManager.getConnection("jdbc:sqlite:database/bookmark.db");
              PreparedStatement pstmt = conn.prepareStatement("INSERT INTO bookmark (bookmarkName, wifiName, addTimestamp) VALUES (?, ?, ?)")) {
 
@@ -52,4 +52,3 @@ public class AddBookmarkServlet extends HttpServlet {
         response.sendRedirect("bookmark-list.jsp");
     }
 }
-

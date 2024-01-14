@@ -9,17 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87b63020-f73a-4f4c-8aeb-bf460e3ff2bf" name="Changes" comment="북마크 목록 표시 기능 추가&#10;&#10; BookmarkDatabaseUtil 클래스를 이용하여 데이터베이스에서 모든 북마크를 가져오는 로직이 포함.">
+    <list default="true" id="87b63020-f73a-4f4c-8aeb-bf460e3ff2bf" name="Changes" comment="flexbox / 중앙 정렬 / 마진 적용 css 추가">
       <change afterPath="$PROJECT_DIR$/src/main/java/com/subeom/service/RedirectServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bookmark-group-delete.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bookmark-group-edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/bookmark-delete.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/subeom/service/AddBookmarkGroupServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/subeom/service/AddBookmarkGroupServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/subeom/service/BookmarkGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/subeom/service/BookmarkGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/subeom/service/AddBookmarkServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/subeom/service/AddBookmarkServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/subeom/service/BookmarkDatabaseUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/subeom/service/BookmarkDatabaseUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/subeom/service/BookmarkGroupDatabaseUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/subeom/service/BookmarkGroupDatabaseUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/bookmark-group.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/bookmark-group.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/detailStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/detailStyles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/bookmark-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/bookmark-list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/detail.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +76,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/subeo/IdeaProjects/Mission1-Project/database&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/subeo/IdeaProjects/JavaStudy&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -344,55 +342,10 @@
       <workItem from="1705038150479" duration="7742000" />
       <workItem from="1705047220852" duration="8372000" />
       <workItem from="1705124359531" duration="10874000" />
-      <workItem from="1705137434591" duration="9381000" />
-    </task>
-    <task id="LOCAL-00018" summary="주석 정리">
-      <option name="closed" value="true" />
-      <created>1704559797367</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1704559797367</updated>
-    </task>
-    <task id="LOCAL-00019" summary="workspace.xml 업데이트">
-      <option name="closed" value="true" />
-      <created>1704559815196</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1704559815196</updated>
-    </task>
-    <task id="LOCAL-00020" summary="주석 정리">
-      <option name="closed" value="true" />
-      <created>1704559831549</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1704559831549</updated>
-    </task>
-    <task id="LOCAL-00021" summary="wifi detail정보 표시 위한 jsp생성">
-      <option name="closed" value="true" />
-      <created>1704559852808</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1704559852808</updated>
-    </task>
-    <task id="LOCAL-00022" summary="주석 정리">
-      <option name="closed" value="true" />
-      <created>1704559863927</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1704559863927</updated>
-    </task>
-    <task id="LOCAL-00023" summary="workspace.xml 업데이트">
-      <option name="closed" value="true" />
-      <created>1704705698870</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1704705698870</updated>
+      <workItem from="1705137434591" duration="10175000" />
+      <workItem from="1705159602753" duration="744000" />
+      <workItem from="1705160899119" duration="698000" />
+      <workItem from="1705208874153" duration="6077000" />
     </task>
     <task id="LOCAL-00024" summary="detail.jsp에 와이파이 상세 데이터 테이블 표시 기능 추가&#10;- detail.jsp에서 와이파이 상세 정보를 테이블 형태로 표시하도록 함.&#10;- 모든 와이파이 데이터(거리, 관리번호, 자치구 등)를 detail.jsp에서 처리할 수 있도록 요청 파라미터 수집 및 테이블에 표시하는 로직 추가.">
       <option name="closed" value="true" />
@@ -738,7 +691,55 @@
       <option name="project" value="LOCAL" />
       <updated>1705132356849</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="ID가 있으면 기존 북마크 그룹 업데이트 (수정)하는 로직 추가">
+      <option name="closed" value="true" />
+      <created>1705158367130</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1705158367131</updated>
+    </task>
+    <task id="LOCAL-00068" summary="북마크 그룹 수정 / 삭제를 위한 jsp 페이지 생성">
+      <option name="closed" value="true" />
+      <created>1705158399598</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1705158399598</updated>
+    </task>
+    <task id="LOCAL-00069" summary="수정 시간 추가">
+      <option name="closed" value="true" />
+      <created>1705158433582</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1705158433583</updated>
+    </task>
+    <task id="LOCAL-00070" summary="수정 시간 추가">
+      <option name="closed" value="true" />
+      <created>1705158440889</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1705158440889</updated>
+    </task>
+    <task id="LOCAL-00071" summary="editTimestamp가 null일때 빈 문자열로 설정하는 로직 추가">
+      <option name="closed" value="true" />
+      <created>1705158463916</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1705158463916</updated>
+    </task>
+    <task id="LOCAL-00072" summary="flexbox / 중앙 정렬 / 마진 적용 css 추가">
+      <option name="closed" value="true" />
+      <created>1705158506228</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1705158506228</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -756,11 +757,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="history 삭제기능을 위한 servlet 생성" />
-    <MESSAGE value="sqlite-jdbc 추가" />
-    <MESSAGE value="위치 검색 이력 관리 클래스 구현" />
-    <MESSAGE value="SQLite 데이터베이스에서 HistoryRecord를 조회하여 표시하는 JSP 페이지 구현" />
-    <MESSAGE value="history.db 추가" />
     <MESSAGE value="주석 업데이트" />
     <MESSAGE value="SearchServlet 수정으로 사용자 위치 검색 이력을 SQLite 데이터베이스에 저장" />
     <MESSAGE value="즐겨찾기 그룹 관리 페이지 데이터베이스 연동 구현" />
@@ -781,7 +777,12 @@
     <MESSAGE value="북마크 삭제를 위한 Servlet 구현" />
     <MESSAGE value="코드 정리" />
     <MESSAGE value="북마크 목록 표시 기능 추가&#10;&#10; BookmarkDatabaseUtil 클래스를 이용하여 데이터베이스에서 모든 북마크를 가져오는 로직이 포함." />
-    <option name="LAST_COMMIT_MESSAGE" value="북마크 목록 표시 기능 추가&#10;&#10; BookmarkDatabaseUtil 클래스를 이용하여 데이터베이스에서 모든 북마크를 가져오는 로직이 포함." />
+    <MESSAGE value="ID가 있으면 기존 북마크 그룹 업데이트 (수정)하는 로직 추가" />
+    <MESSAGE value="북마크 그룹 수정 / 삭제를 위한 jsp 페이지 생성" />
+    <MESSAGE value="수정 시간 추가" />
+    <MESSAGE value="editTimestamp가 null일때 빈 문자열로 설정하는 로직 추가" />
+    <MESSAGE value="flexbox / 중앙 정렬 / 마진 적용 css 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="flexbox / 중앙 정렬 / 마진 적용 css 추가" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
